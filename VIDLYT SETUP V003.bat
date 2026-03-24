@@ -365,8 +365,8 @@ set "AUDIO_OPTS="
 if "!QUALITY!"=="BEST VIDEO" (
     set "FORMAT=bestvideo+bestaudio/best"
 ) else if "!QUALITY!"=="BEST AUDIO" (
-    set "FORMAT=bestaudio[ext=m4a]/bestaudio"
-    set "AUDIO_OPTS=--extract-audio --audio-format m4a"
+    set "FORMAT=bestaudio[ext=opus]/bestaudio"
+    set "AUDIO_OPTS=--extract-audio --audio-format opus"
 ) else if "!QUALITY!"=="2160" (
     set "FORMAT=bestvideo[height<=2160]+bestaudio/best"
 ) else if "!QUALITY!"=="1440" (
